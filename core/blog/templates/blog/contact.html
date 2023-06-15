@@ -10,33 +10,29 @@
     <section class="contact_section">
       <div class="container">
         <div class="heading_container">
-          <h2>
-            Свяжитесь с нами
-          </h2>
+       
         </div>
       </div>
-      <div class="container contact_bg layout_padding2-top">
+      <div style="border-radius: 2%;" class="container contact_bg layout_padding2-top">
         <div class="row">
           <div class="col-md-6">
             <div class="contact_form ">
-              <form action="">
-                <input type="text" placeholder="Name ">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Message" class="message_input">
-                <button>
-                  Отправить
-                </button>
+              <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Отправить</button>
               </form>
             </div>
           </div>
           <div class="col-md-6">
             <div class="img-box">
-              <img src="{% static 'images/freedom.jpg'%}" alt="">
+              <img style="border-radius: 2%; margin-left: 10px; ;"  src="{% static 'images/ima.avif' %}" alt="">
             </div>
           </div>
         </div>
       </div>
     </section>
+    
 
     <!-- end contact section -->
 

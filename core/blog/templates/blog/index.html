@@ -24,9 +24,8 @@
                     Добро пожаловать в<br />
                     <span> ЮРИДИЧЕСКУЮ ФИРМУ CONFIDENCE </span>
                   </h1>
-                  <p>CONFIDENCE LAW FIRM</p>
                   <div class="btn-box">
-                    <a href="" class="btn-1"> Связяться с нами </a>
+                    <a  href="{% url 'contact' %}" class="btn-1"> Связяться</a>
                   </div>
                 </div>
               </div>
@@ -48,8 +47,8 @@
                   <p>
 
                   </p>
-                  <div class="btn-box">
-                    <a href="" class="btn-1"> Связяться </a>
+                  <div class="btn-box" >
+                    <a  href="{% url 'contact' %}" class="btn-1"> Связяться </a>
                   </div>
                 </div>
               </div>
@@ -74,31 +73,70 @@
   <div class="container">
     <div class="box">
       <div class="detail-box">
-        <h3>
+        <h1>
           ЮРИДИЧЕСКАЯ ФИРМА CONFIDENCE
           ​
-        </h3>
-        <p>
+          <hr>
+        </h1>
+         <h2 style="text-align: justify;">
           Фирма осуществляет юридические услуги на территории города Бишкек, Кыргызская Республика. Основными
           направлениями Фирмы являются судебное представительство в судебных органах, корпоративное обслуживание
           предпринимателей, налоговое консультирование и сопровождение процедуры лицензирования и
-          регистрация/перерегистрация/ликвидация юридических лиц и филиалов/представительств. Следует отметить, что наша
+          регистрация  перерегистрация ликвидация юридических лиц и филиалов  представительств. Следует отметить, что наша
           Фирма состоит в консалтинговом консорциуме с бухгалтерской компанией, что обеспечивает всестороннее и
-          комплексное обслуживание предпринимателей по вопросам юриспруденции и налогового/бухгалтерского учета.
+          комплексное обслуживание предпринимателей по вопросам юриспруденции и налогового бухгалтерского учета.
+         </h2>
+         <hr>
 
-        </p>
+       
       </div>
-      <div class="btn-box">
-        <a href="">
-
-        </a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- end quote section -->
-
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2 style="color: rgb(12, 12, 123)">O HAC</h2>
+          </div>
+          <h4 style="text-align: justify; word-break: break-word;">
+            Фирма осуществляет юридические услуги на территории города Бишкек,
+            Кыргызская Республика. Основными направлениями Фирмы являются
+            судебное представительство в судебных органах, корпоративное
+            обслуживание предпринимателей, налоговое консультирование и
+            сопровождение процедуры лицензирования и
+            регистрация / перерегистрация / ликвидация юридических лиц и
+            филиалов / представительств. Следует отметить, что наша Фирма состоит
+            в консалтинговом консорциуме с бухгалтерской компанией, что
+            обеспечивает всестороннее и комплексное обслуживание
+            предпринимателей по вопросам юриспруденции и
+            налогового / бухгалтерского учета. ​ Мы убеждены в том, что
+            партнерские отношения с нашим клиентами, основанные на взаимном
+            доверии и поддержке, обеспечивают возможности для достижения
+            значительных результатов в бизнесе.
+            
+          </h4>
+          <br>
+            <h5>С уважением</h5>
+            <h5>Портнер Фирмы</h5>
+            <h5>Султан Калыбаев</h5>
+              <a href="" style="color: rgb(238, 238, 248)"></a>
+        
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="img-box">
+          <img style="border-radius: 10%; margin-left: 60px; margin-top: 140px;" src="{% static 'images/gro.jpg'%}" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- client section -->
 
@@ -136,7 +174,7 @@
             <div class="client_detail">
               <div class="client_text">
                 <blockquote>
-                  <p>
+                  <p style="text-align: justify;">
                     «Клиент – это самый важный посетитель. Не он зависит от нас. Мы зависим от него. Он не прерывает
                     нашу работу. Он – цель нашей работы. Он не по ту сторону нашего бизнеса. Он – его часть. Мы не
                     делаем ему одолжение, обслуживая его. Он делает нам одолжение, давая возможность это сделать»
@@ -165,7 +203,7 @@
             <div class="client_detail">
               <div class="client_text">
                 <blockquote>
-                  <p>
+                  <p style="text-align: justify;">
                     «Главное - установить реалистичные ожидания клиентов, а затем не просто удовлетворить их, а
                     превзойти их, желательно неожиданными и полезными способами».
                   </p>
@@ -193,7 +231,7 @@
             <div class="client_detail">
               <div class="client_text">
                 <blockquote>
-                  <p>
+                  <p style="text-align: justify;">
                     Есть одно очень простое, но действенное правило: всегда давайте людям больше, чем они ожидают
                     получить.
                   </p>
@@ -214,5 +252,37 @@
 </div>
 
 
+
+
 <!-- end info section -->
+<section class="info_section layout_padding">
+  <div class="footer_contact">
+    <div class="heading_container">
+      <h2 style="background-color: black; color: aliceblue; border-radius: 50%;">
+        Связяться 
+      </h2>
+    </div>
+   <div class="box">
+  <a href="#" class="img-box">
+    <img src="{% static 'images/location.png' %}" alt="" class="img-1">
+    <img src="{% static 'images/location-o.png' %}" alt="" class="img-2">
+  </a>
+  <a href="#" class="img-box">
+    <img src="{% static 'images/call.png' %}" alt="" class="img-1">
+    <img src="{% static 'images/call-o.png' %}" alt="" class="img-2">
+  </a>
+  <a href="mailto:confidence.lawyers@gmail.com" class="img-box">
+    <img src="{% static 'images/envelope.png' %}" alt="" class="img-1">
+    <img src="{% static 'images/envelope-o.png' %}" alt="" class="img-2">
+  </a>
+
+  <a href="mailto:confidence.lawyers@gmail.com" class="img-box">
+    <img src="{% static 'images/envelope.png' %}" alt="" class="img-1">
+    <img src="{% static 'images/envelope-o.png' %}" alt="" class="img-2">
+  </a>
+</div>
+</section>
 {% endblock %}
+
+
+<!-- Телеграм Gmail реализовать смс для gmail  -->
