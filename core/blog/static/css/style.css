@@ -113,12 +113,11 @@ a:focus {
   margin-right: 5px;
 }
 
-.navbar-brand span {
-  font-size: 24px;
-  font-weight: 700;
+.navbar-brand h3 {
+  
+  font-weight: bold;
   color: #020464;
   text-transform: uppercase;
-  
 }
 
 .custom_nav-container {
